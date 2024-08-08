@@ -18,7 +18,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.Status;
 
-@Path("sfc/menu")
+@Path("bitnet/menu")
 public class Recurso_Menu implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -46,12 +46,12 @@ public class Recurso_Menu implements Serializable {
 			conn.commit();
 			conn.setAutoCommit(true);
 		} catch (Exception ex) {
-			String mensaje = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			String mensaje = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString();
 
 			resultado = Response.status(Status.NOT_FOUND).entity(mensaje).build();
 
-			System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString());
 		} finally {
 			try {
@@ -60,7 +60,7 @@ public class Recurso_Menu implements Serializable {
 					conn = null;
 				}
 			} catch (Exception ex) {
-				System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+				System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 						+ " ==> METODO: obtener_lista()-Finally" + " ERROR: " + ex.toString());
 			}
 		}
@@ -91,12 +91,12 @@ public class Recurso_Menu implements Serializable {
 			conn.commit();
 			conn.setAutoCommit(true);
 		} catch (Exception ex) {
-			String mensaje = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			String mensaje = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: obtener_id()" + " ERROR: " + ex.toString();
 
 			resultado = Response.status(Status.NOT_FOUND).entity(mensaje).build();
 
-			System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: obtener_id()" + " ERROR: " + ex.toString());
 		} finally {
 			try {
@@ -105,7 +105,7 @@ public class Recurso_Menu implements Serializable {
 					conn = null;
 				}
 			} catch (Exception ex) {
-				System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+				System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 						+ " ==> METODO: obtener_id()-Finally" + " ERROR: " + ex.toString());
 			}
 		}
@@ -136,12 +136,12 @@ public class Recurso_Menu implements Serializable {
 			conn.commit();
 			conn.setAutoCommit(true);
 		} catch (Exception ex) {
-			String mensaje = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			String mensaje = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: crear()" + " ERROR: " + ex.toString();
 
 			resultado = Response.status(Status.NOT_FOUND).entity(mensaje).build();
 
-			System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: crear()" + " ERROR: " + ex.toString());
 		} finally {
 			try {
@@ -150,7 +150,7 @@ public class Recurso_Menu implements Serializable {
 					conn = null;
 				}
 			} catch (Exception ex) {
-				System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+				System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 						+ " ==> METODO: crear()-Finally" + " ERROR: " + ex.toString());
 			}
 		}
@@ -181,12 +181,12 @@ public class Recurso_Menu implements Serializable {
 			conn.commit();
 			conn.setAutoCommit(true);
 		} catch (Exception ex) {
-			String mensaje = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			String mensaje = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: modificar()" + " ERROR: " + ex.toString();
 
 			resultado = Response.status(Status.NOT_FOUND).entity(mensaje).build();
 
-			System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: modificar()" + " ERROR: " + ex.toString());
 		} finally {
 			try {
@@ -195,7 +195,7 @@ public class Recurso_Menu implements Serializable {
 					conn = null;
 				}
 			} catch (Exception ex) {
-				System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+				System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 						+ " ==> METODO: modificar()-Finally" + " ERROR: " + ex.toString());
 			}
 		}
@@ -226,12 +226,12 @@ public class Recurso_Menu implements Serializable {
 			conn.commit();
 			conn.setAutoCommit(true);
 		} catch (Exception ex) {
-			String mensaje = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			String mensaje = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: eliminar()" + " ERROR: " + ex.toString();
 
 			resultado = Response.status(Status.NOT_FOUND).entity(mensaje).build();
 
-			System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+			System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 					+ " ==> METODO: eliminar()" + " ERROR: " + ex.toString());
 		} finally {
 			try {
@@ -240,7 +240,7 @@ public class Recurso_Menu implements Serializable {
 					conn = null;
 				}
 			} catch (Exception ex) {
-				System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+				System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
 						+ " ==> METODO: eliminar()-Finally" + " ERROR: " + ex.toString());
 			}
 		}

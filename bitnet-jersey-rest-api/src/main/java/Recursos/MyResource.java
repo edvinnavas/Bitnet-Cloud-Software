@@ -7,7 +7,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import java.io.Serializable;
 
-@Path("sfc")
+@Path("bitnet")
 public class MyResource implements Serializable {
 
     private static final long serialVersionUID = 1L;

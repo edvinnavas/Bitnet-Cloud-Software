@@ -28,7 +28,7 @@ public class Ctrl_Base_Datos implements Serializable {
 
             Ctrl_Archivos ctrl_archivos = new Ctrl_Archivos();
             List<String> lineas_archivos = ctrl_archivos
-                    .lineas_archivo("C:/VolumeDocker/SFC_PORTAL_IT/Configuracion/properties.conf");
+                    .lineas_archivo("/Rest_Api/Configuracion/properties.conf");
 
             for (Integer i = 0; i < lineas_archivos.size(); i++) {
                 String[] param_db = lineas_archivos.get(i).trim().split(":");
@@ -63,7 +63,7 @@ public class Ctrl_Base_Datos implements Serializable {
             // System.out.println("Conexión MySQL satisfactoria!!!");
         } catch (Exception ex) {
             resultado = null;
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_conexion_mysql()" + " ERROR: " + ex.toString());
         }
 
@@ -82,9 +82,9 @@ public class Ctrl_Base_Datos implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            resultado = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            resultado = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerString()" + " ERROR: " + ex.toString();
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerString()" + " ERROR: " + ex.toString());
         }
 
@@ -104,7 +104,7 @@ public class Ctrl_Base_Datos implements Serializable {
             stmt.close();
         } catch (Exception ex) {
             resultado = -1;
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerEntero()" + " ERROR: " + ex.toString());
         }
 
@@ -124,7 +124,7 @@ public class Ctrl_Base_Datos implements Serializable {
             stmt.close();
         } catch (Exception ex) {
             resultado = Long.valueOf(-1);
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerLong()" + " ERROR: " + ex.toString());
         }
 
@@ -144,7 +144,7 @@ public class Ctrl_Base_Datos implements Serializable {
             stmt.close();
         } catch (Exception ex) {
             resultado = -1.00;
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerDouble()" + " ERROR: " + ex.toString());
         }
 
@@ -165,7 +165,7 @@ public class Ctrl_Base_Datos implements Serializable {
         } catch (Exception ex) {
             resultado = new ArrayList<>();
             resultado.add(ex.toString());
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerVectorString()" + " ERROR: " + ex.toString());
         }
 
@@ -186,7 +186,7 @@ public class Ctrl_Base_Datos implements Serializable {
         } catch (Exception ex) {
             resultado = new ArrayList<>();
             resultado.add(-1);
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerVectorEntero()" + " ERROR: " + ex.toString());
         }
 
@@ -207,7 +207,7 @@ public class Ctrl_Base_Datos implements Serializable {
         } catch (Exception ex) {
             resultado = new ArrayList<>();
             resultado.add(Long.valueOf("-1"));
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: ObtenerVectorLong()" + " ERROR: " + ex.toString());
         }
 
@@ -224,9 +224,9 @@ public class Ctrl_Base_Datos implements Serializable {
 
             resultado = "0,Comando ejecutado correctamente.";
         } catch (Exception ex) {
-            resultado = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            resultado = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: EjecutarCMD()" + " ERROR: " + ex.toString();
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: EjecutarCMD()" + " ERROR: " + ex.toString());
         }
 

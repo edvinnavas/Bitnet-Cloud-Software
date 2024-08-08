@@ -48,7 +48,7 @@ public class Ctrl_Tipo_Evento implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString());
         }
 
@@ -83,7 +83,7 @@ public class Ctrl_Tipo_Evento implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_id()" + " ERROR: " + ex.toString());
         }
 
@@ -125,7 +125,7 @@ public class Ctrl_Tipo_Evento implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: crear()" + " ERROR: " + ex.toString());
         }
 
@@ -158,7 +158,7 @@ public class Ctrl_Tipo_Evento implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: modificar()" + " ERROR: " + ex.toString());
         }
 
@@ -198,7 +198,7 @@ public class Ctrl_Tipo_Evento implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: eliminar()" + " ERROR: " + ex.toString());
         }
 

@@ -234,9 +234,9 @@ public class Ctrl_Ambiente implements Serializable {
 
             resultado = "AMBIENTE INICIADO CORRECTAMENTE.";
         } catch (Exception ex) {
-            resultado = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            resultado = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: iniciar()" + " ERROR: " + ex.toString();
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: iniciar()" + " ERROR: " + ex.toString());
         }
 
@@ -251,7 +251,7 @@ public class Ctrl_Ambiente implements Serializable {
             Controles.Ctrl_Usuario ctrl_usuario = new Controles.Ctrl_Usuario();
             resultado = ctrl_usuario.autenticar(conn, "enavas", "Edfr@2024");
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: iniciar()" + " ERROR: " + ex.toString());
         }
 

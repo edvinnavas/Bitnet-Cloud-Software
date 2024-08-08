@@ -107,7 +107,7 @@ public class FiltroRecurso implements ContainerRequestFilter, Serializable {
             }
         } catch (Exception ex) {
             isAllowed = false;
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: isUserAllowed()" + " ERROR: " + ex.toString());
         } finally {
             try {
@@ -116,7 +116,7 @@ public class FiltroRecurso implements ContainerRequestFilter, Serializable {
                     conn = null;
                 }
             } catch(Exception ex) {
-                System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+                System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: isUserAllowed()-Finally" + " ERROR: " + ex.toString());
             }
         }

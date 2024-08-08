@@ -48,7 +48,7 @@ public class Ctrl_Rol implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString());
         }
 
@@ -83,7 +83,7 @@ public class Ctrl_Rol implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_id()" + " ERROR: " + ex.toString());
         }
 
@@ -124,7 +124,7 @@ public class Ctrl_Rol implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: crear()" + " ERROR: " + ex.toString());
         }
 
@@ -157,7 +157,7 @@ public class Ctrl_Rol implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: modificar()" + " ERROR: " + ex.toString());
         }
 
@@ -197,7 +197,7 @@ public class Ctrl_Rol implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: eliminar()" + " ERROR: " + ex.toString());
         }
 
@@ -231,7 +231,7 @@ public class Ctrl_Rol implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_lista_rol_menu()" + " ERROR: " + ex.toString());
         }
 
@@ -272,7 +272,7 @@ public class Ctrl_Rol implements Serializable {
 
             resultado = obtener_lista_rol_menu(conn, id_rol);
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: crear_lista_rol_menu()" + " ERROR: " + ex.toString());
         }
 

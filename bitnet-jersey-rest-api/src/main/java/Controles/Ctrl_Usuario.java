@@ -61,7 +61,7 @@ public class Ctrl_Usuario implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString());
         }
 
@@ -106,7 +106,7 @@ public class Ctrl_Usuario implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: obtener_lista()" + " ERROR: " + ex.toString());
         }
 
@@ -158,7 +158,7 @@ public class Ctrl_Usuario implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: crear()" + " ERROR: " + ex.toString());
         }
 
@@ -195,7 +195,7 @@ public class Ctrl_Usuario implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: modificar()" + " ERROR: " + ex.toString());
         }
 
@@ -245,7 +245,7 @@ public class Ctrl_Usuario implements Serializable {
             stmt.executeUpdate(sql);
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: eliminar()" + " ERROR: " + ex.toString());
         }
 
@@ -266,9 +266,9 @@ public class Ctrl_Usuario implements Serializable {
 
             resultado = "Contraseña actualizada correctamente.";
         } catch (Exception ex) {
-            resultado = "PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            resultado = "PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: cambiar_contrasena()" + " ERROR: " + ex.toString();
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: cambiar_contrasena()" + " ERROR: " + ex.toString());
         }
 
@@ -328,7 +328,7 @@ public class Ctrl_Usuario implements Serializable {
             rs.close();
             stmt.close();
         } catch (Exception ex) {
-            System.out.println("PROYECTO: SFC-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
+            System.out.println("PROYECTO: BITNET-JERSEY-REST-API ==> CLASE: " + this.getClass().getName()
                     + " ==> METODO: autenticar()" + " ERROR: " + ex.toString());
         }
 

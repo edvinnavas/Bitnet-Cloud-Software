@@ -31,7 +31,7 @@ public class MyResourceTest implements Serializable {
     
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("mi-recurso").request().get(String.class);
+        String responseMsg = target.path("bitnet").request().get(String.class);
         assertEquals("Got it!", responseMsg);
     }
     
